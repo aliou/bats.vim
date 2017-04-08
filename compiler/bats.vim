@@ -1,3 +1,6 @@
+" Bats.vim - Syntax files for Bats (Bash Automated Testing System).
+" Version: 0.3.0
+
 if exists("current_compiler")
   finish
 endif

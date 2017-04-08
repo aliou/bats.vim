@@ -1,5 +1,5 @@
 " Bats.vim - Syntax files for Bats (Bash Automated Testing System).
-" Version: 0.2.0
+" Version: 0.3.0
 
 " Comment string.
 setlocal commentstring=#\ %s
