@@ -6,19 +6,18 @@ if exists("current_compiler")
 endif
 let current_compiler = 'bats'
 
-if exists(":CompilerSet") != 2    " older Vim always used :setlocal
+if exists(':CompilerSet') != 2    " older Vim always used :setlocal
   command -nargs=* CompilerSet setlocal <args>
 endif
 
-let s:cpo_save = &cpo
-set cpo-=C
+CompilerSet makeprg=bats
+" TODO: Also match errors occuring somewhere else than in test.
+let s:errorformat = join([
+  \ '%Enot ok %m',
+  \ '%-C# (in test file %f\\, line %l)',
+  \ '%-C#  %m',
+  \ '%-G%.%#',
+  \ '%Z'
+  \ ], ',')
 
-CompilerSet makeprg=bats\ -t
-" CompilerSet errorformat=
-      " \%Enot\ ok\ %.\ %m
-      " \%-C\#\ \(in\ test\ file\ %f\\,\ line\ %l\),
-      " \%+C\#\ %m,
-      " \%-G%.%#
-
-let &cpo = s:cpo_save
-unlet s:cpo_save
+execute 'CompilerSet errorformat=' . escape(s:errorformat, ' ')
