@@ -19,6 +19,7 @@ syntax keyword batsAssertions	assert_equal containedin=shExpr contained
 syntax keyword batsAssertions	assert_success containedin=shExpr contained
 syntax keyword batsAssertions	assert_failure containedin=shExpr contained
 syntax keyword batsAssertions	assert_output containedin=shExpr contained
+syntax keyword batsAssertions	refute_output containedin=shExpr contained
 syntax keyword batsAssertions	assert_line containedin=shExpr contained
 syntax keyword batsAssertions	refute_line containedin=shExpr contained
 
