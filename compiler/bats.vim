@@ -10,7 +10,8 @@ if exists(':CompilerSet') != 2    " older Vim always used :setlocal
   command -nargs=* CompilerSet setlocal <args>
 endif
 
-CompilerSet makeprg=bats
+CompilerSet makeprg=bats\ %
+
 " TODO: Also match errors occuring somewhere else than in test.
 let s:errorformat = join([
   \ '%Enot ok %m',
