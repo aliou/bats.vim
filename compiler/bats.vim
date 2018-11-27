@@ -1,5 +1,5 @@
 " Bats.vim - Syntax files for Bats (Bash Automated Testing System).
-" Version: 0.3.0
+" Version: 0.5.0
 
 if exists("current_compiler")
   finish
