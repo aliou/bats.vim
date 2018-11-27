@@ -6,3 +6,6 @@ setlocal commentstring=#\ %s
 
 " Consider `$` as part of a word text object.
 setlocal iskeyword+=$
+
+" Enable the compiler.
+compiler bats
