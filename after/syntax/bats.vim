@@ -22,7 +22,7 @@ syntax keyword batsAssertions	assert_output containedin=shExpr contained
 syntax keyword batsAssertions	refute_output containedin=shExpr contained
 syntax keyword batsAssertions	assert_line containedin=shExpr contained
 syntax keyword batsAssertions	refute_line containedin=shExpr contained
-syntax keyword batsAssertions	assert_file containedin=shExpr contained
+syntax keyword batsAssertions	assert_file_exist containedin=shExpr contained
 syntax keyword batsAssertions	assert_file_not_exist containedin=shExpr contained
 
 " Link the colors to the existing group name. :h group-name
