@@ -7,5 +7,8 @@ setlocal commentstring=#\ %s
 " Consider `$` as part of a word text object.
 setlocal iskeyword+=$
 
+" Go to files in `load` directives.
+setlocal suffixesadd=.bash
+
 " Enable the compiler.
 compiler bats
