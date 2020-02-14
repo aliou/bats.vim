@@ -1,5 +1,5 @@
 " Bats.vim - Syntax files for Bats (Bash Automated Testing System).
-" Version: 0.7.0
+" Version: 0.8.0
 
 " Load Bash syntax.
 let g:is_bash=1
