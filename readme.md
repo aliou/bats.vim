@@ -15,7 +15,7 @@ git clone https://github.com/aliou/bats.vim.git ~/.vim/pack/aliou/opt/bats.vim
 ```
 
 Using [Pathogen](https://github.com/tpope/vim-pathogen):
- ```bash
+```bash
 git clone https://github.com/aliou/bats.vim.git ~/.vim/bundle/bats.vim
 ```
 
