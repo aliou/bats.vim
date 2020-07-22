@@ -34,5 +34,13 @@ Using [Vundle](https://github.com/gmarik/vundle):
 Plugin 'aliou/bats.vim'
 ```
 
+## Configuration
+
+### `g:bats_vim_consider_dollar_as_part_of_word`
+
+Default: `1`
+
+Whether or not to add dollar sign to iskeyword.
+
 ## License
 Copyright © Aliou Diallo. Distributed under the same terms as Vim itself. See `:help license.`
