@@ -15,8 +15,9 @@ CompilerSet makeprg=bats\ %
 " TODO: Also match errors occuring somewhere else than in test.
 let s:errorformat = join([
   \ '%Enot ok %m',
-  \ '%-C# (in test file %f\\, line %l)',
-  \ '%-C#  %m',
+  \ '%-C#%.%#in test file %f\\, line %l)',
+  \ '%-C# (from func%.%#',
+  \ '%-C# %m',
   \ '%-G%.%#',
   \ '%Z'
   \ ], ',')
