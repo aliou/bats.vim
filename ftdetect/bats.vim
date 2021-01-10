@@ -1,5 +1,5 @@
 " Bats.vim - Syntax files for Bats (Bash Automated Testing System).
-" Version: 0.9.0
+" Version: 0.10.0
 
 autocmd BufRead,BufNewFile *.bats set filetype=bats
 autocmd BufRead,BufNewFile * call s:DetectBats()
